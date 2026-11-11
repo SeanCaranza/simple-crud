@@ -27,7 +27,7 @@ if (!$tableCreated) {
 
 $error = "";
 
-// Handling all the function for Add, Edit, and Delete form.
+// handling all the function
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $action = $_POST["action"] ?? "";
 
@@ -95,7 +95,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 }
 
-// Load that employee into the form for editing.
+// can edit
 $editEmployee = null;
 if (isset($_GET["edit"])) {
     $id = (int) $_GET["edit"];
@@ -113,7 +113,6 @@ if (isset($_GET["edit"])) {
     $editEmployee = $result->fetch_assoc();
 }
 
-// Read all employees so we can show them in the table.
 $employees = $connection->query(
     "SELECT id, name, email, phone, joining_date FROM employees ORDER BY id"
 );
@@ -121,7 +120,7 @@ if (!$employees) {
     die("Could not load employees: " . skiphtml($connection->error));
 }
 
-// Keep the values in the form
+// keep the values in the form
 $name = $_POST["name"] ?? ($editEmployee["name"] ?? "");
 $email = $_POST["email"] ?? ($editEmployee["email"] ?? "");
 $phone = $_POST["phone"] ?? ($editEmployee["phone"] ?? "");
