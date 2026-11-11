@@ -1,0 +1,140 @@
+body {
+  background-color: gray;
+}
+
+#form {
+  background-color: white;
+  width: 25%;
+  margin: 120px auto;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgb(221, 189, 219);
+  border-radius: 4px;
+}
+
+#submit-btn {
+  color: rgb(46, 15, 15);
+  background-color: rgb(200, 221, 214);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  #form {
+    width: 65%;
+    padding: 40px;
+  }
+}
+
+.crud-page {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 24px;
+  background: white;
+  border-radius: 6px;
+}
+
+.crud-page h1,
+.crud-page h2 {
+  color: #222;
+}
+
+.employee-form {
+  max-width: 520px;
+  margin-bottom: 32px;
+}
+
+.employee-form label {
+  display: block;
+  margin: 12px 0 5px;
+}
+
+.employee-form input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+.button-add {
+  margin-top: 16px;
+  background: #0878e8;
+}
+
+.button-edit {
+  background: #12805c;
+}
+
+.button-delete {
+  background: #df4141;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.employee-list table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.employee-list th,
+.employee-list td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.employee-list th {
+  color: #222;
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+.actions form {
+  margin: 0;
+}
+
+.notice,
+.error {
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.notice {
+  color: #155724;
+  background: #d4edda;
+}
+
+.error {
+  color: #721c24;
+  background: #f8d7da;
+}
+
+.cancel-link {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .crud-page {
+    margin: 16px;
+    padding: 16px;
+  }
+}
